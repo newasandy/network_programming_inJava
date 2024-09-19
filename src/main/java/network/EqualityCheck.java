@@ -7,7 +7,7 @@ package network;
 import java.net.*;
 /**
  *
- * @author ANKITA
+ * @author srbne
  */
 public class EqualityCheck {
     public static void main(String[] args) {
