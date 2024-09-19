@@ -6,18 +6,18 @@ package network;
 
 import java.net.*;
 import java.io.*;
+
 /**
  *
- * @author ANKITA
+ * @author srbne
  */
 public class URLDecoders {
-    public static void main (String[]args){
+    public static void main(String[] args) {
         String encodedUrl = "https://www.javatpoint.com/+u%40+java+T+point";
-        try{
+        try {
             String decodedUrl = URLDecoder.decode(encodedUrl, "UTF-8");
-            System.out.println("Decoded Url :" +decodedUrl);
-        }catch (UnsupportedEncodingException e)
-        {
+            System.out.println("Decoded Url :" + decodedUrl);
+        } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
     }

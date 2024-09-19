@@ -4,13 +4,15 @@
  */
 //testing the characteristics of an IP address
 package network;
+
 import java.net.*;
+
 /**
  *
- * @author ANKITA
+ * @author srbne
  */
 public class IPchar {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
         try {
             InetAddress address = InetAddress.getByName("FF01:0:0:0:0:0:0:1");
             if (address.isAnyLocalAddress()) {
@@ -23,15 +25,18 @@ public class IPchar {
                 System.out.println(address + " is a link-local address.");
             } else if (address.isSiteLocalAddress()) {
                 System.out.println(address + " is a site-local address.");
-            }else {
+            } else {
                 System.out.println(address + " is a global address.");
-            }if (address.isMulticastAddress()) {
+            }
+            if (address.isMulticastAddress()) {
                 if (address.isMCGlobal()) {
                     System.out.println(address + " is a global multicast address.");
                 } else if (address.isMCOrgLocal()) {
                     System.out.println(address + " is an organization wide multicast address.");
-                } else if (address.isMCSiteLocal()) { System.out.println(address + " is a site wide multicast address.");
-                } else if (address.isMCLinkLocal()) { System.out.println(address + " is a subnet wide multicast address.");
+                } else if (address.isMCSiteLocal()) {
+                    System.out.println(address + " is a site wide multicast address.");
+                } else if (address.isMCLinkLocal()) {
+                    System.out.println(address + " is a subnet wide multicast address.");
                 } else if (address.isMCNodeLocal()) {
                     System.out.println(address + " is an interface-local multicast address.");
                 } else {

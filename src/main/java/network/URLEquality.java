@@ -4,22 +4,24 @@
  */
 //lab11 URL Equality check
 package network;
+
 import java.net.*;
+
 /**
  *
- * @author ANKITA
+ * @author srbne
  */
 public class URLEquality {
-    public static void main(String[]args){
-        try{
-            URL www=new URL ("http://www.ibiblio.org/");
-            URL ibiblio = new URL ("http://ibiblio.org/");
-            if(ibiblio.sameFile(www)){
-                System.out.println(ibiblio+"is the same as" +www);
-            }else{
-                System.out.println(ibiblio+ "is not the same as" +www);
+    public static void main(String[] args) {
+        try {
+            URL www = new URL("http://www.ibiblio.org/");
+            URL ibiblio = new URL("http://ibiblio.org/");
+            if (ibiblio.sameFile(www)) {
+                System.out.println(ibiblio + "is the same as" + www);
+            } else {
+                System.out.println(ibiblio + "is not the same as" + www);
             }
-        }catch(MalformedURLException ex){
+        } catch (MalformedURLException ex) {
             System.out.println(ex);
         }
     }

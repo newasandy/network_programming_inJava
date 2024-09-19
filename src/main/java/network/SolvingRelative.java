@@ -3,11 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package network;
+
 import java.net.*;
+
 /**
  *
- * @author ANKITA
+ * @author srbne
  */
 public class SolvingRelative {
-    
+
 }

@@ -4,10 +4,12 @@
  */
 //determining whether an IP address is v4 or v6
 package network;
+
 import java.net.*;
+
 /**
  *
- * @author ANKITA
+ * @author srbne
  */
 public class lab4 {
     public static int getVersion(InetAddress ia) {
@@ -23,7 +25,7 @@ public class lab4 {
     }
 
     public static void main(String[] args) throws UnknownHostException {
-        InetAddress ia =InetAddress.getByName("8.8.8.8");
+        InetAddress ia = InetAddress.getByName("8.8.8.8");
         lab4.getVersion(ia);
     }
 }
