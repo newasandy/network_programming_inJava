@@ -5,14 +5,11 @@
 //lab10
 package network;
 import java.net.URL;
-/**
- *
- * @author ANKITA
- */
+
 public class URLSplitter {
     public static void main(String args[]) throws Exception {
 
-    URL u = new URL("http://ankita:jkkkkk@www.java2s.com:232/index.html?category=kpop#19970701");
+    URL u = new URL("http://urll:jkkkkk@www.java2s.com:232/demo.html?category=pop#19970701");
     System.out.println("The URL is " + u);
     System.out.println("The scheme is " + u.getProtocol());
     System.out.println("The user info is " + u.getUserInfo());
